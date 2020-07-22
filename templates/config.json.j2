@@ -1,0 +1,40 @@
+
+{
+  "Tokens": {
+       "AccessToken" : "{{ lacework_accessToken }}"
+  }
+  {%- if lacework_proxyUrl is defined %},
+  "ProxyUrl" : "{{ lacework_proxyUrl }}"
+  {%- endif %}
+  {%- if lacework_aggregator is defined %},
+  "Aggregator" : "{{ lacework_aggregator }}"
+  {%- endif %}
+  {%- if lacework_aggregatorPort is defined %},
+  "AggregatorPort": "{{ lacework_aggregatorPort }}"
+  {%- endif %}
+  {%- if lacework_aggregatorDownloadCache is defined %},
+  "AggregatorDownloadCache": "{{ lacework_aggregatorDownloadCache }}"
+  {%- endif %}
+  {%- if lacework_aggregatorSensitiveDir is defined %},
+  "AggregatorSensitiveDir": "{{ lacework_aggregatorSensitiveDir }}"
+  {%- endif %}
+  {%- if lacework_autoUpgrade is defined %},
+  "AutoUpgrade" : "{{ lacework_autoUpgrade }}"
+  {%- endif %}
+  {%- if lacework_checkfreq is defined %},
+  "checkfreq" : "{{ lacework_checkfreq }}"
+  {%- endif %}
+  {%- if lacework_dbSize is defined %},
+  "DbSize" : "{{ lacework_dbSize }}"
+  {%- endif %}
+  {%- if lacework_aggregatorUrl is defined %},
+  "AggregatorUrl" : "{{ lacework_aggregatorUrl }}"
+  {%- endif %}
+  {%- if lacework_aggregatorCert is defined %},
+  "AggregatorCert" : "{{ lacework_aggregatorCert }}"
+  {%- endif %}
+  {%- if lacework_tags is defined %},
+  "Tags": {{ lacework_tags |tojson }}
+  {%- endif %}
+
+}
