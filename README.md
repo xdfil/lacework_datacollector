@@ -1,4 +1,4 @@
-Role Name
+lacework_datacollector
 =========
 
 Install the Lacework Datacollector Agent on systems using the yum or apt package manager.
