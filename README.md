@@ -22,8 +22,11 @@ lacework_autoUpgrade\
 lacework_checkfreq\
 lacework_dbSize\
 lacework_aggregatorUrl\
-lacework_aggregatorCert\
+lacework_aggregatorCert
+
 lacework_tags (Dictionary)
+
+Note: All lacework_tags values should be quoted. Booleans will not work unless they are quoted)
 
 
 Example Playbook
@@ -38,6 +41,8 @@ Example Playbook
         - lacework_accessToken: "your token"
         - lacework_tags:
             foo: bar
+            # you must quote boolean tag values
+            test: "true"
 
 License
 -------
