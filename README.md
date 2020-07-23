@@ -26,7 +26,7 @@ lacework_aggregatorCert
 
 lacework_tags (Dictionary)
 
-Note: All lacework_tags values should be quoted. Booleans will not work unless they are quoted)
+Note: All lacework_tags values should be quoted. Booleans will not work unless they are quoted.
 
 
 Example Playbook
