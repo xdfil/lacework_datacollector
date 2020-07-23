@@ -1,7 +1,7 @@
 Role Name
 =========
 
-Install the Lacework Datacollector Agent on systems using the yum or apt package manager
+Install the Lacework Datacollector Agent on systems using the yum or apt package manager.
 
 
 Role Variables
@@ -36,6 +36,8 @@ Example Playbook
         - lacework_datacollector
       vars:
         - lacework_accessToken: "your token"
+        - lacework_tags:
+            foo: bar
 
 License
 -------
