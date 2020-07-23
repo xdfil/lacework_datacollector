@@ -34,7 +34,7 @@
   wait_for:
     path: /var/lib/lacework/config/ 
 
-- name: set access key
+- name: generate config.json
   template:
     src: config.json.j2
     dest: /var/lib/lacework/config/config.json
